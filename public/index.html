@@ -558,7 +558,10 @@
                 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
                 transform: translateY(-150%);
                 transition: transform 0.3s;
-                z-index: 999;
+                z-index: 9999;
+                height: auto;
+                max-height: calc(100vh - 80px);
+                overflow-y: auto;
             }
 
             nav.active {
@@ -568,20 +571,27 @@
             nav ul {
                 flex-direction: column;
                 align-items: center;
+                padding: 0;
+                margin: 0;
             }
 
             nav ul li {
                 margin: 0 0 15px 0;
+                width: 100%;
+                text-align: center;
             }
 
             nav ul li a {
                 color: white;
                 font-size: 18px;
+                display: block;
+                padding: 10px 0;
             }
 
             .mobile-menu-btn {
                 display: block;
-                z-index: 1000;
+                z-index: 10000;
+                position: relative;
             }
 
             .hero h1 {
@@ -619,7 +629,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="images/logo.png" alt="AquaShield Pro Logo">
+                <img src="/images/logo.png" alt="Akshay Enterprises Logo">
                 AKSHAY<span>ENTERPRISES</span> 
             </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
@@ -660,51 +670,48 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="images/Picture1.jpg" alt="Roof Waterproofing">
+                        <img src="/images/Picture1.jpg" alt="Waterproofing">
                     </div>
                     <div class="service-content">
-                        <h3> Waterproofing</h3>
+                        <h3>Waterproofing</h3>
                         <p>Advanced roof waterproofing solutions to protect your property from leaks and water damage, extending the life of your roof.</p>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="images/Picture2.jpg" alt="Basement Waterproofing">
+                        <img src="/images/Picture2.jpg" alt="Civil Works">
                     </div>
                     <div class="service-content">
                         <h3>Civil Works</h3>
-                        <p>Comprehensive basement waterproofing systems to keep your lower levels dry and prevent structural damage.</p>
+                        <p>Comprehensive civil works solutions to keep your structures strong and prevent structural damage.</p>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="images/Picture3.jpg" alt="Bathroom Waterproofing">
+                        <img src="/images/Picture3.jpg" alt="Painting">
                     </div>
                     <div class="service-content">
                         <h3>Painting</h3>
-                        <p>Specialized waterproofing for bathrooms and wet areas to prevent leaks and mold growth.</p>
+                        <p>Professional painting services for both interior and exterior surfaces.</p>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="images/Picture4.jpg" alt="Concrete Repair">
+                        <img src="/images/Picture4.jpg" alt="Plumbing">
                     </div>
                     <div class="service-content">
                         <h3>Plumbing</h3>
-                        <p>Expert concrete repair services to restore structural integrity and appearance to damaged concrete surfaces.</p>
+                        <p>Expert plumbing services for residential and commercial properties.</p>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="images/Picture5.jpg" alt="Structural Waterproofing">
+                        <img src="/images/Picture5.jpg" alt="Fabrication">
                     </div>
                     <div class="service-content">
                         <h3>Fabrication</h3>
-                        <p>Complete structural waterproofing solutions for foundations, retaining walls, and underground structures.</p>
+                        <p>Complete fabrication solutions for various construction needs.</p>
                     </div>
-                </div>
-               
-                    
                 </div>
             </div>
         </div>
@@ -715,14 +722,14 @@
         <div class="container">
             <div class="about-container">
                 <div class="about-img">
-                    <img src="images/akshay.jpg" alt="Our Team">
+                    <img src="/images/akshay.jpg" alt="Akshay Patwardhan">
                 </div>
                 <div class="about-content">
                     <h2>Akshay Patwardhan(Owner)</h2>
                     <p>I am a Civil Engineer based in Nagpur, Maharashtra.
                         I have the experience of working in this industry for past 2.5+ years.
                         I am a registered contractor in NMC and PWD
-                        </p>
+                    </p>
                     <p>We pride ourselves on using only the highest quality materials and the latest technologies to deliver durable, long-lasting solutions for our clients.</p>
                     <div class="features-list">
                         <div class="feature-item">
@@ -761,35 +768,35 @@
             </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="images/Picture21.jpg" alt="Commercial Building Waterproofing">
+                    <img src="/images/Picture21.jpg" alt="Commercial Building Waterproofing">
                     <div class="project-overlay">
                         <h3>Commercial Building Waterproofing</h3>
                         <p>Downtown Office Complex</p>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="images/Picture22.jpg" alt="Residential Basement Waterproofing">
+                    <img src="/images/Picture22.jpg" alt="Residential Basement Waterproofing">
                     <div class="project-overlay">
                         <h3>Residential Basement Waterproofing</h3>
                         <p>Suburban Home Renovation</p>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="images/Picture23.jpg" alt="Municipal Infrastructure">
+                    <img src="/images/Picture23.jpg" alt="Municipal Infrastructure">
                     <div class="project-overlay">
                         <h3>Municipal Infrastructure</h3>
                         <p>City Water Treatment Plant</p>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="images/Picture24.jpg" alt="Hotel Terrace Waterproofing">
+                    <img src="/images/Picture24.jpg" alt="Hotel Terrace Waterproofing">
                     <div class="project-overlay">
                         <h3>Hotel Terrace Waterproofing</h3>
                         <p>Luxury Beachfront Resort</p>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="images/Picture25.jpg" alt="Parking Structure Restoration">
+                    <img src="/images/Picture25.jpg" alt="Parking Structure Restoration">
                     <div class="project-overlay">
                         <h3>Parking Structure Restoration</h3>
                         <p>Shopping Mall Parking Garage</p>
